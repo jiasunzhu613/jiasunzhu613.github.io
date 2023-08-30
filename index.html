@@ -2,22 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>JiSA Design—Home</title>
+    <title>Jonathan Zhu</title>
     <!--Favicon-->
 <!--    <link rel="icon" type="image/png" href="assets/img/favicon.png"/>-->
 
-    <link rel="stylesheet" href="../css/index.css"/>
-    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.4/dist/flowbite.min.css"/>
-    <!--Tailwind CDN-->
+    <link rel="stylesheet" href="fonts/inter.css"/>
+<!--    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.4/dist/flowbite.min.css"/>-->
+    <!--    Tailwind CDN-->
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        module.exports = {
+            theme: {
+                fontFamily: {
+                    'sans': ['ui-sans-serif', 'system-ui'],
+                    'serif': ['ui-serif', 'Georgia'],
+                    'mono': ['ui-monospace', 'SFMono-Regular'],
+                    'display': ['Oswald'],
+                    'body': ['"Open Sans"'],
+                }
+            }
+        }
+    </script>
 
-    <!--GOOGLE FONTS-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700;800;900&display=swap"
-          rel="stylesheet">
+<!--    &lt;!&ndash;GOOGLE FONTS&ndash;&gt;-->
+<!--    <link rel="preconnect" href="https://fonts.googleapis.com">-->
+<!--    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>-->
+<!--    <link href="https://fonts.googleapis.com/css2?family=Andika:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">-->
 
-    <!--JQUERY-->
+<!--    JQUERY-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <!-- ICONS BOXICONS -->
@@ -26,24 +38,270 @@
     <!--AOS-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
-<body>
-<section class="bg-black">
-    <div class="h-screen w-full">
-        <h1 class="text-9xl text-white">
-            HEY ITS ME
-        </h1>
+<body >
+<!--Landing section-->
+<section class="bg-green-200 h-screen items-center flex justify-center">
+    <div class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 lg:px-36">
+        <div class="mt-4 md:mt-0 ">
+            <div>
+                <h1 class="text-5xl tracking-tight font-extrabold text-gray-900 dark:text-white">
+                    Hey. &nbsp I'm<br>
+                </h1>
+                <h1 class="mb-4 text-8xl tracking-tight font-extrabold text-gray-900 dark:text-white">
+                    Jonathan
+                </h1>
+            </div>
+        </div>
+        <img class="w-full dark:hidden" src="images/heroImage.png" alt="profile image">
 
     </div>
 
+
 </section>
+
+<!--About section-->
+<section class="bg-white h-screen w-screen flex items-center justify-center">
+    <div class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
+        <div class="" data-aos="fade-right" data-aos-duration="1500">
+            <a href="">
+                <img class="w-10/12" src="images/heroImage.png" alt="dashboard image">
+            </a>
+        </div>
+        <div data-aos="fade-right" data-aos-duration="1500" class="mt-4 md:mt-0">
+            <h1 class="mb-4 text-7xl tracking-tight font-extrabold">
+                Jonathan Zhu
+            </h1>
+            <h3 class="mb-4 text-3xl tracking-tight font-extrabold">
+                Student at Colonel By Secondary School
+            </h3>
+            <p class="text-justify mb-6 font-normal text-gray-600 md:text-lg">
+                We help design and create design logos, products, and other illustrations
+                to help companies visualize their future, elevate their content visually,
+                and develop a fitting and aesthetic identity to boost audience engagement.
+                We aim to help businesses become more coherent brands through visual design.
+            </p>
+            <div class="flex flex-row space-x-8 align-middle">
+<!--                <img class="w-14 h-14 rounded-full" src="images/profile.JPG" alt="profile picture">-->
+                <a href="" target="_blank" class="flex items-center justify-center space-x-2 group">
+                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" class="fill-slate-600 group-hover:fill-slate-900 w-6 h-6">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.463 2 11.97c0 4.404 2.865 8.14 6.839 9.458.5.092.682-.216.682-.48 0-.236-.008-.864-.013-1.695-2.782.602-3.369-1.337-3.369-1.337-.454-1.151-1.11-1.458-1.11-1.458-.908-.618.069-.606.069-.606 1.003.07 1.531 1.027 1.531 1.027.892 1.524 2.341 1.084 2.91.828.092-.643.35-1.083.636-1.332-2.22-.251-4.555-1.107-4.555-4.927 0-1.088.39-1.979 1.029-2.675-.103-.252-.446-1.266.098-2.638 0 0 .84-.268 2.75 1.022A9.607 9.607 0 0 1 12 6.82c.85.004 1.705.114 2.504.336 1.909-1.29 2.747-1.022 2.747-1.022.546 1.372.202 2.386.1 2.638.64.696 1.028 1.587 1.028 2.675 0 3.83-2.339 4.673-4.566 4.92.359.307.678.915.678 1.846 0 1.332-.012 2.407-.012 2.734 0 .267.18.577.688.48 3.97-1.32 6.833-5.054 6.833-9.458C22 6.463 17.522 2 12 2Z"></path>
+                    </svg>
+                    <p class="text-slate-600 group-hover:text-slate-900 text-base font-medium">
+                        GitHub
+                    </p>
+                </a>
+                <a href="" target="_blank" class="flex items-center justify-center space-x-2 group">
+                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" class="fill-slate-600 group-hover:fill-slate-900 w-6 h-6">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zM8.339 18.337H5.667v-8.59h2.672v8.59zM7.003 8.574a1.548 1.548 0 1 1 0-3.096 1.548 1.548 0 0 1 0 3.096zm11.335 9.763h-2.669V14.16c0-.996-.018-2.277-1.388-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248h-2.667v-8.59h2.56v1.174h.037c.355-.675 1.227-1.387 2.524-1.387 2.704 0 3.203 1.778 3.203 4.092v4.71z"></path>
+                    </svg>
+                    <p class="text-slate-600 group-hover:text-slate-900 text-base font-medium">
+                        LinkedIn
+                    </p>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Projects section-->
+<section class="mr-[13vw] ml-[13vw]">
+    <div data-aos="fade-up" data-aos-duration="1000" class="flex inline-flex my-16">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.2" stroke="currentColor"
+             class="w-8 h-8 mr-8 text-slate-900">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+        </svg>
+        <span class="text-slate-900 text-2xl">
+        Selected projects <span class="text-base">(click to view details)</span>
+        </span>
+    </div>
+    <div class="flex flex-col justify-center items-center lg:justify-start lg:items-start lg:grid lg:grid-cols-2 lg:gap-16">
+        <div class="flex flex-col mx-1 items-center justify-center">
+            <a href="https://github.com/jiasunzhu613/Minesweeper" target="_blank">
+                <div class="mb-24 hover:scale-110 transition ease-in-out duration-300 delay-100 max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                    <img class="rounded-t-lg" src="images/minesweeper.jpeg" alt="" />
+                    <div class="p-5">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                            Minesweeper
+                        </h5>
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                            💣 A Java clone of the classic video game: Minesweeper
+                        </p>
+                    </div>
+                </div>
+            </a>
+            <a href="https://dmoj.ca/user/jzhu19/solved" target="_blank">
+                <div class="mb-24 hover:scale-110 transition ease-in-out duration-300 delay-100 max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                    <img class="rounded-t-lg" src="images/graph_theory.jpg" alt="" />
+                    <div class="p-5">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                            Competitive Programming
+                        </h5>
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                            View the various problems I've solves on the DMOJ competitive progamming platform
+                        </p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="flex flex-col mx-1 items-center justify-center lg:mt-16">
+            <a href="https://github.com/pasindu651/Digio-Job-Finder" target="_blank">
+                <div class="mb-24 hover:scale-110 transition ease-in-out duration-300 delay-100 max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                    <img class="rounded-t-lg" src="images/digio.jpeg" alt="" />
+                    <div class="p-5">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
+                            Digio Job Finder
+                        </h5>
+                        <h5 class="mb-2 text-base font-normal tracking-tight text-gray-900">
+                            Created in collaboration with <a class="font-bold hover:underline" href="https://ca.linkedin.com/in/pasindu-danthanarayana-9a38b118a" target="_blank">Pasindu D</a>
+                        </h5>
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                            A Web App built for Power Up Hacks 2022 that makes finding jobs easier with Django, Python, HTML, and CSS.
+                        </p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+<!--<section class="dark:bg-gray-900">-->
+<!--    <div class="relative flex flex-row py-8 px-4 mx-auto max-w-screen-xl w-screen lg:px-6">-->
+<!--        <div class="mt-4 md:mt-0 static flex flex-col w-full">-->
+<!--            <div class="max-w-[453px]">-->
+<!--                <h1 class="mb-4 text-7xl tracking-tight font-extrabold text-gray-900 dark:text-white">-->
+<!--                    Jonathan Zhu-->
+<!--                </h1>-->
+<!--                <h2 class="font-bold text-2xl">-->
+<!--                    Student at Colonel By Secondary School-->
+<!--                </h2>-->
+<!--                <p class="my-10 font-light text-black md:text-lg text-justify">-->
+<!--                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.-->
+<!--                </p>-->
+<!--            </div>-->
+<!--            <div class="flex flex-row space-x-8 align-middle">-->
+<!--&lt;!&ndash;                <img class="w-14 h-14 rounded-full" src="images/profile.JPG" alt="profile picture">&ndash;&gt;-->
+<!--                <a href="" target="_blank" class="flex items-center justify-center space-x-2">-->
+<!--                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" class="fill-slate-900 w-6 h-6">-->
+<!--                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.463 2 11.97c0 4.404 2.865 8.14 6.839 9.458.5.092.682-.216.682-.48 0-.236-.008-.864-.013-1.695-2.782.602-3.369-1.337-3.369-1.337-.454-1.151-1.11-1.458-1.11-1.458-.908-.618.069-.606.069-.606 1.003.07 1.531 1.027 1.531 1.027.892 1.524 2.341 1.084 2.91.828.092-.643.35-1.083.636-1.332-2.22-.251-4.555-1.107-4.555-4.927 0-1.088.39-1.979 1.029-2.675-.103-.252-.446-1.266.098-2.638 0 0 .84-.268 2.75 1.022A9.607 9.607 0 0 1 12 6.82c.85.004 1.705.114 2.504.336 1.909-1.29 2.747-1.022 2.747-1.022.546 1.372.202 2.386.1 2.638.64.696 1.028 1.587 1.028 2.675 0 3.83-2.339 4.673-4.566 4.92.359.307.678.915.678 1.846 0 1.332-.012 2.407-.012 2.734 0 .267.18.577.688.48 3.97-1.32 6.833-5.054 6.833-9.458C22 6.463 17.522 2 12 2Z"></path>-->
+<!--                    </svg>-->
+<!--                    <p class="text-base font-medium">-->
+<!--                        GitHub-->
+<!--                    </p>-->
+<!--                </a>-->
+<!--                <a href="" target="_blank" class="flex items-center justify-center space-x-2">-->
+<!--                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" class="fill-slate-900 w-6 h-6">-->
+<!--                        <path fill-rule="evenodd" clip-rule="evenodd" d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zM8.339 18.337H5.667v-8.59h2.672v8.59zM7.003 8.574a1.548 1.548 0 1 1 0-3.096 1.548 1.548 0 0 1 0 3.096zm11.335 9.763h-2.669V14.16c0-.996-.018-2.277-1.388-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248h-2.667v-8.59h2.56v1.174h.037c.355-.675 1.227-1.387 2.524-1.387 2.704 0 3.203 1.778 3.203 4.092v4.71z"></path>-->
+<!--                    </svg>-->
+<!--                    <p class="text-base font-medium">-->
+<!--                        LinkedIn-->
+<!--                    </p>-->
+<!--                </a>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--&lt;!&ndash;        <img class="w-full dark:hidden" src="images/heroImage.png" alt="profile image">&ndash;&gt;-->
+<!--    </div>-->
+<!--</section>-->
+
+<!--<div class=" md:max-w-536 lg:max-w-736 md:absolute md:right-0 md:pt-0 lg:pb-88 md:pl-0 overflow-y-scroll">-->
+<!--    <div class="">-->
+<!--        <div class="w-full group overflow-y-scroll">-->
+<!--            <article class="mb-8 transition bg-[#202022] md:group-hover:opacity-50 md:hover:opacity-important md:hover:scale-11/10x">-->
+<!--                <a class="block p-8 space-y-2" href="" target="_blank">-->
+<!--                    <p class="text-xs font-bold tracking-widest uppercase text-white">Type Script</p>-->
+<!--                    <h3 class="text-3xl font-semibold leading-tight text-white">dinerojs/dinero.js</h3>-->
+<!--                    <p class="text-grey-200">Create, calculate, and format money in JavaScript and TypeScript.</p>-->
+<!--                </a>-->
+<!--            </article>-->
+<!--            <article class="my-8 transition bg-[#202022] md:group-hover:opacity-50 md:hover:opacity-important md:hover:scale-11/10x">-->
+<!--                <a class="block p-8 space-y-2" href="" target="_blank">-->
+<!--                    <p class="text-xs font-bold tracking-widest uppercase text-white">Type Script</p>-->
+<!--                    <h3 class="text-3xl font-semibold leading-tight text-white">dinerojs/dinero.js</h3>-->
+<!--                    <p class="text-grey-200">Create, calculate, and format money in JavaScript and TypeScript.</p>-->
+
+<!--                </a>-->
+<!--            </article>-->
+<!--            <article class="my-8 transition bg-[#202022] md:group-hover:opacity-50 md:hover:opacity-important md:hover:scale-11/10x">-->
+<!--                <a class="block p-8 space-y-2" href="" target="_blank">-->
+<!--                    <p class="text-xs font-bold tracking-widest uppercase text-white">Type Script</p>-->
+<!--                    <h3 class="text-3xl font-semibold leading-tight text-white">dinerojs/dinero.js</h3>-->
+<!--                    <p class="text-grey-200">Create, calculate, and format money in JavaScript and TypeScript.</p>-->
+
+<!--                </a>-->
+<!--            </article>-->
+<!--            <article class="my-8 transition bg-[#202022] md:group-hover:opacity-50 md:hover:opacity-important md:hover:scale-11/10x">-->
+<!--                <a class="block p-8 space-y-2" href="" target="_blank">-->
+<!--                    <p class="text-xs font-bold tracking-widest uppercase text-white">Type Script</p>-->
+<!--                    <h3 class="text-3xl font-semibold leading-tight text-white">dinerojs/dinero.js</h3>-->
+<!--                    <p class="text-grey-200">Create, calculate, and format money in JavaScript and TypeScript.</p>-->
+
+<!--                </a>-->
+<!--            </article>-->
+
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+
+<!--<section class="bg-white">-->
+<!--    <div class="w-screen h-screen flex flex-row mx-auto">-->
+<!--        <div class="pt-[5vw] pl-[17.8vw] bg-red-500 flex flex-col justify-between w-full">-->
+<!--            <h1 class="font-extrabold text-7xl">-->
+<!--                Jonathan Zhu-->
+<!--            </h1>-->
+<!--            <h2 class="font-semibold text-2xl">-->
+<!--                Student at Colonel By Secondary School-->
+<!--            </h2>-->
+<!--            <p class="font-normal text-base">-->
+<!--                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.-->
+<!--            </p>-->
+<!--            <div class="flex flex-row space-x-8 align-middle">-->
+<!--                <img class="w-14 h-14 rounded-full" src="images/profile.JPG" alt="profile picture">-->
+<!--                <a href="" target="_blank" class="flex items-center justify-center space-x-2">-->
+<!--                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" class="fill-slate-900 w-6 h-6">-->
+<!--                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.463 2 11.97c0 4.404 2.865 8.14 6.839 9.458.5.092.682-.216.682-.48 0-.236-.008-.864-.013-1.695-2.782.602-3.369-1.337-3.369-1.337-.454-1.151-1.11-1.458-1.11-1.458-.908-.618.069-.606.069-.606 1.003.07 1.531 1.027 1.531 1.027.892 1.524 2.341 1.084 2.91.828.092-.643.35-1.083.636-1.332-2.22-.251-4.555-1.107-4.555-4.927 0-1.088.39-1.979 1.029-2.675-.103-.252-.446-1.266.098-2.638 0 0 .84-.268 2.75 1.022A9.607 9.607 0 0 1 12 6.82c.85.004 1.705.114 2.504.336 1.909-1.29 2.747-1.022 2.747-1.022.546 1.372.202 2.386.1 2.638.64.696 1.028 1.587 1.028 2.675 0 3.83-2.339 4.673-4.566 4.92.359.307.678.915.678 1.846 0 1.332-.012 2.407-.012 2.734 0 .267.18.577.688.48 3.97-1.32 6.833-5.054 6.833-9.458C22 6.463 17.522 2 12 2Z"></path>-->
+<!--                    </svg>-->
+<!--                    <p class="text-base font-medium">-->
+<!--                        GitHub-->
+<!--                    </p>-->
+<!--                </a>-->
+<!--                <a href="" target="_blank" class="flex items-center justify-center space-x-2">-->
+<!--                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" class="fill-slate-900 w-6 h-6">-->
+<!--                        <path fill-rule="evenodd" clip-rule="evenodd" d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zM8.339 18.337H5.667v-8.59h2.672v8.59zM7.003 8.574a1.548 1.548 0 1 1 0-3.096 1.548 1.548 0 0 1 0 3.096zm11.335 9.763h-2.669V14.16c0-.996-.018-2.277-1.388-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248h-2.667v-8.59h2.56v1.174h.037c.355-.675 1.227-1.387 2.524-1.387 2.704 0 3.203 1.778 3.203 4.092v4.71z"></path>-->
+<!--                    </svg>-->
+<!--                    <p class="text-base font-medium">-->
+<!--                        LinkedIn-->
+<!--                    </p>-->
+<!--                </a>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="bg-green-500 w-full">-->
+
+<!--        </div>-->
+<!--&lt;!&ndash;        <div class="static flex flex-col justify-between w-full p-24 sm:p-32 md:max-w-496 md:fixed md:h-screen lg:py-88 lg:pl-88 md:pr-72 lg:pr-0">&ndash;&gt;-->
+<!--&lt;!&ndash;            <h1 class="text-7xl font-extrabold">&ndash;&gt;-->
+<!--&lt;!&ndash;                Jonathan Zhu&ndash;&gt;-->
+<!--&lt;!&ndash;            </h1>&ndash;&gt;-->
+<!--&lt;!&ndash;            <p class="text-normal font-extrabold">&ndash;&gt;-->
+<!--&lt;!&ndash;                Lorem ipsum dolor sit amet, consectetur adipiscing elit,&ndash;&gt;-->
+<!--&lt;!&ndash;                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&ndash;&gt;-->
+<!--&lt;!&ndash;                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris&ndash;&gt;-->
+<!--&lt;!&ndash;                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in&ndash;&gt;-->
+<!--&lt;!&ndash;                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla&ndash;&gt;-->
+<!--&lt;!&ndash;                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in&ndash;&gt;-->
+<!--&lt;!&ndash;                culpa qui officia deserunt mollit anim id est laborum.&ndash;&gt;-->
+<!--&lt;!&ndash;            </p>&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;        <div class="static p-24 sm:p-32 md:max-w-536 lg:max-w-736 md:absolute md:right-0 lg:py-88 lg:pr-88 md:pl-0">&ndash;&gt;-->
+
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+<!--    </div>-->
+<!--</section>-->
 
 <!-- GSAP -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
 
-<!-- Flowbite CDN-->
-<script src="https://unpkg.com/flowbite@1.5.4/dist/flowbite.js"></script>
+<!--&lt;!&ndash; Flowbite CDN&ndash;&gt;-->
+<!--<script src="https://unpkg.com/flowbite@1.5.4/dist/flowbite.js"></script>-->
 
-<!-- Main JS -->
+<!--&lt;!&ndash; Main JS &ndash;&gt;-->
 <!--<script src="assets/js/main.js"></script>-->
 
 <!--&lt;!&ndash;Animations JS&ndash;&gt;-->

@@ -1,0 +1,11 @@
+.project_container{
+    overflow: hidden;
+}
+
+.project_container img{
+    transition: all 0.5s cubic-bezier(0.25, 1, 0.3, 1);
+}
+
+.project_container:hover img.hoverable{
+    transform: scale(1.1);
+}
