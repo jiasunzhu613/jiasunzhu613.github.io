@@ -1,3 +1,11 @@
+html{
+    scroll-behavior: smooth; !important
+}
+
+/*#landing__title {*/
+/*    margin-top: -2rem;*/
+/*}*/
+
 .project_container{
     overflow: hidden;
 }
