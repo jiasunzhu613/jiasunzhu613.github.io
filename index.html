@@ -59,7 +59,7 @@
 <!--Landing section-->
 <section class="static">
 <!--    -mt-[7.5vw] md:-mt-[8vw]-->
-    <div class="h-screen w-screen items-center flex justify-center">
+    <div class="h-screen w-screen items-center flex justify-center" id="landing">
         <div class="flex flex-col justify-center py-8 px-16 mx-[5vw] xl:gap-16 md:grid md:grid-cols-2">
             <div class="mt-8 sm:mt-16 md:mt-24">
                 <h1 data-aos="fade-right" data-aos-duration="1500" class="text-[2rem] sm:text-[2.5rem] md:text-[4.166666666666667vw] tracking-tight font-extrabold">
@@ -82,7 +82,7 @@
 </section>
 
 <!--About section-->
-<section class="bg-[#005bef] h-screen w-screen flex items-center justify-center" id="about">
+<section class="h-screen bg-[#005bef] w-screen flex items-center justify-center" id="about">
     <div class="flex flex-col justify-center gap-2 md:gap-8 items-center py-8 px-4 mx-[5vw] xl:gap-16 md:grid md:grid-cols-2 sm:py-16">
         <div class="flex justify-center items-center align-middle" data-aos="fade-right" data-aos-duration="1500">
             <img class="w-[15rem] sm:w-[15rem] md:w-10/12" src="images/profile1.png" alt="dashboard image">
@@ -96,8 +96,8 @@
             </h3>
             <p class="text-[#f4f4f4] px-[2vw] md:px-0 text-justify mb-6 font-normal text-[0.6rem] md:text-[0.9rem] lg:text-[1.2vw]">
                 I am a highly driven and self-motivated individual with a profound passion for technology.
-                My goal is to combine my enthusiasm for innovation with my creative vision to make impactful
-                advancements in the field.
+                My goal is to combine my enthusiasm for innovation with my creative vision to make projects and technologies
+                that are impactful and helpful to others.
                 <br>
                 <br>
                 In my spare time, I enjoy solving programming problems in an efficient manner, learning about different programming
@@ -223,5 +223,10 @@
         once: true,
     });
 </script>
+<!--<script>-->
+<!--    console.log(screen.availHeight)-->
+<!--    document.getElementById("landing").style.height = screen.height;-->
+<!--    document.getElementById("about").style.height = screen.height;-->
+<!--</script>-->
 </body>
 </html>
